@@ -8,3 +8,12 @@ But this lib show title under your splash.
 If this is not for your design, you may want to detele it.
 But pwacompat impl is `const title = manifest['name'] || manifest['short_name'] || document.title;`, will fill some title under your splash.
 That is why I changed it to `const title = ""`.
+
+## how to use
+
+put this code.
+
+```
+<link rel="manifest" href="manifest.webmanifest" />
+<script async src="https://raw.githubusercontent.com/sadnessOjisan/orecompat/master/emptyTitleSplashPwaCompat.js" crossorigin="anonymous"></script>
+```
